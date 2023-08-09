@@ -5,6 +5,6 @@ public class Main {
         String firstName = "Olek";
         String lastName = "Sandr";
 
-        System.out.println(firstName + " " + lastName + " САЛАМАЛЕЙКУМ");
+        System.out.println(firstName + " " + lastName + " ти шо дЕбіл?");
     }
 }
