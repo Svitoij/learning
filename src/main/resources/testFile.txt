@@ -1,2 +1,1 @@
-TestTextInFile
-	
+I will delete this file.
