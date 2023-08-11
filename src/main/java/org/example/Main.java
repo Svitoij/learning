@@ -8,7 +8,6 @@ public class Main {
         String firstName = "Olek";
         String lastName = "Sandr";
 
-
         Period difference = Period.between(LocalDate.of(2000, 8, 12), LocalDate.now());
         int age = difference.getYears();
         System.out.println(firstName + " " + lastName + " ти шо дЕбіл? Тобі " + age);
