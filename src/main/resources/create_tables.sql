@@ -23,7 +23,7 @@ create table company (
     name VARCHAR(100) NOT NULL
 );
 
-create table x_y (
+create table users_vacancies (
     user_id BIGINT REFERENCES users(id),
     vacancy_id BIGINT REFERENCES vacancies(id)
 );
