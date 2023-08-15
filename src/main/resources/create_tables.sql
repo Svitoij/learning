@@ -32,3 +32,8 @@ create table search (
     user_id BIGINT REFERENCES users(id),
     vacancy_id BIGINT REFERENCES vacancies(id)
 );
+
+create table company_vacancies (
+    company_id BIGINT REFERENCES company(id),
+    vacancy_id BIGINT REFERENCES vacancies(id)
+);
