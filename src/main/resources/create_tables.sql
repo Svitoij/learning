@@ -23,12 +23,7 @@ create table company (
     name VARCHAR(100) NOT NULL
 );
 
-create table response (
-    user_id BIGINT REFERENCES users(id),
-    vacancy_id BIGINT REFERENCES vacancies(id)
-);
-
-create table search (
+create table x_y (
     user_id BIGINT REFERENCES users(id),
     vacancy_id BIGINT REFERENCES vacancies(id)
 );
