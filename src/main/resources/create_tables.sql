@@ -13,7 +13,7 @@ CREATE TABLE users (
 
 CREATE TABLE vacancies (
     id BIGSERIAL NOT NULL PRIMARY KEY,
-    vac_name VARCHAR(50),
+    name VARCHAR(50),
     description TEXT,
     salary DECIMAL(10, 2),
 );
@@ -24,13 +24,11 @@ create table company (
 );
 
 create table response (
-    id BIGSERIAL NOT NULL PRIMARY KEY,
     user_id BIGINT REFERENCES users(id),
     vacancy_id BIGINT REFERENCES vacancies(id)
 );
 
 create table search (
-    id BIGSERIAL NOT NULL PRIMARY KEY,
     user_id BIGINT REFERENCES users(id),
     vacancy_id BIGINT REFERENCES vacancies(id)
 );
