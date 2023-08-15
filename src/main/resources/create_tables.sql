@@ -1,6 +1,6 @@
-create type roles as enum ('jobseeker', 'recruiter')
+create type roles as enum ('jobseeker', 'recruiter');
 
-CREATE TABLE users (
+create table users (
     id BIGSERIAL NOT NULL PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
@@ -11,11 +11,11 @@ CREATE TABLE users (
     UNIQUE(email)
 );
 
-CREATE TABLE vacancies (
+create table vacancies (
     id BIGSERIAL NOT NULL PRIMARY KEY,
     name VARCHAR(50),
     description TEXT,
-    salary DECIMAL(10, 2),
+    salary DECIMAL(10, 2)
 );
 
 create table company (
