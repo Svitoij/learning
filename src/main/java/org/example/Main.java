@@ -1,15 +1,29 @@
 package org.example;
 
-import java.time.LocalDate;
-import java.time.Period;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        String firstName = "Olek";
-        String lastName = "Sandr";
+        Map<String, String> hm = new HashMap<>();
+        hm.put("B", "1");
+        hm.put("C", "2");
+        hm.put("A", "3");
 
-        Period difference = Period.between(LocalDate.of(2000, 8, 12), LocalDate.now());
-        int age = difference.getYears();
-        System.out.println(firstName + " " + lastName + " ти шо дЕбіл? Тобі " + age);
+        Map<String, String> lhm = new LinkedHashMap<>();
+        lhm.put("B", "1");
+        lhm.put("C", "2");
+        lhm.put("A", "3");
+
+        for (Map.Entry<String, String> entry : hm.entrySet()) {
+            System.out.print(entry.toString() + " | ");
+        }
+
+        System.out.println();
+
+        for (Map.Entry<String, String> entry : lhm.entrySet()) {
+            System.out.print(entry.toString() + " | ");
+        }
     }
 }
